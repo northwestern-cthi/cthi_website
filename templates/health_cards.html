@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Health Education Cards - Northwestern University Chinatown Health Initiative{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>All Health Education Cards</h1>
+        <p>Comprehensive health information resources for the community</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="intro-text">
+            <p>We've created these health education materials based on the most common questions we hear from families at our health information desk. Each card is written in simple language, translated by native speakers, and reviewed by healthcare professionals to ensure accuracy.</p>
+            <p>All resources are available in both English and Chinese. Use the language toggle button to switch languages.</p>
+        </div>
+        
+        <div class="health-categories-grid">
+            {% for category in categories %}
+            <a href="/health-cards/{{ category.id }}" class="category-card">
+                <div class="category-icon">
+                    {% if category.id == 'cancer' %}🎗️
+                    {% elif category.id == 'cardiovascular' %}❤️
+                    {% elif category.id == 'chronic-illness' %}🩺
+                    {% elif category.id == 'dental' %}🦷
+                    {% elif category.id == 'infections' %}🦠
+                    {% elif category.id == 'mental-health' %}🧠
+                    {% elif category.id == 'preventative' %}✅
+                    {% elif category.id == 'respiratory' %}🫁
+                    {% elif category.id == 'sexual-health' %}💊
+                    {% endif %}
+                </div>
+                <h3>{{ category.name }}</h3>
+                <p class="category-subtitle">{{ category.name_zh }}</p>
+                <span class="view-resources">View Resources →</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Need Help Finding Resources?</h2>
+            <p>Visit our health information desk at the Chinatown Public Library or contact us for assistance.</p>
+            <a href="/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category.name_zh }} - 健康教育資源 - Northwestern University CTHI{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>{{ category.name_zh }}</h1>
+        <p>健康教育資源和資訊</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/resources-zh">← 返回所有健康教育資源</a>
+        </div>
+        
+        <div class="resource-content">
+            <div class="resource-intro">
+                <h2>關於{{ category.name_zh }}</h2>
+                <p>本部分包含與{{ category.name_zh }}相關的教育材料和資源。我們的材料旨在為唐人街社區提供易於理解且文化相關的資訊。</p>
+                <p class="language-note">These resources are also available in English. Use the language toggle button to switch languages.</p>
+            </div>
+            
+            <div class="resource-cards">
+                <div class="resource-item">
+                    <h3>教育材料</h3>
+                    <p>可下載的關於{{ category.name_zh }}的資訊卡片和小冊子。</p>
+                    <p class="coming-soon">資源即將推出 - 目前正在匯編中</p>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>涵蓋的主題</h3>
+                    <ul class="topic-list">
+                        <li>概述和預防</li>
+                        <li>警示信號和症狀</li>
+                        <li>治療選擇</li>
+                        <li>社區資源</li>
+                        <li>常見問題</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>獲取更多資訊</h3>
+                    <p>請訪問唐人街公共圖書館的健康資訊台獲取這些資源的印刷副本，或就具體問題與我們聯繫。</p>
+                    <a href="/contact" class="btn btn-primary">聯繫我們</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <h2>探索其他主題</h2>
+        <div class="related-categories">
+            <a href="/resources-zh" class="btn btn-secondary">查看所有類別</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

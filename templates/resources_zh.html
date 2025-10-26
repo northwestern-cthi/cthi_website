@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}健康教育資源 - Northwestern University Chinatown Health Initiative{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>健康教育資源</h1>
+        <p>為社區提供全面的中文健康資訊資源</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="intro-text">
+            <p>我們的健康教育卡片為社區成員提供了各種主題的可靠健康資訊。這些資源旨在幫助社區成員就他們的健康和保健做出明智的決定。</p>
+            <p>All resources are available in both English and Chinese. Use the language toggle button to switch languages.</p>
+        </div>
+        
+        <div class="health-categories-grid">
+            {% for category in categories %}
+            <a href="/resources-zh/{{ category.id }}" class="category-card">
+                <div class="category-icon">
+                    {% if category.id == 'cancer' %}🎗️
+                    {% elif category.id == 'cardiovascular' %}❤️
+                    {% elif category.id == 'chronic-illness' %}🩺
+                    {% elif category.id == 'dental' %}🦷
+                    {% elif category.id == 'infections' %}🦠
+                    {% elif category.id == 'mental-health' %}🧠
+                    {% elif category.id == 'preventative' %}✅
+                    {% elif category.id == 'respiratory' %}🫁
+                    {% elif category.id == 'sexual-health' %}💊
+                    {% endif %}
+                </div>
+                <h3>{{ category.name_zh }}</h3>
+                <p class="category-subtitle">{{ category.name }}</p>
+                <span class="view-resources">查看資源 →</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="cta-content">
+            <h2>需要幫助尋找資源？</h2>
+            <p>請訪問唐人街公共圖書館的健康資訊台，或聯繫我們尋求幫助。</p>
+            <a href="/contact" class="btn btn-primary">聯繫我們</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

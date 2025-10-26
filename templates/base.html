@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Northwestern University Chinatown Health Initiative{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon_32.png') }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ url_for('static', filename='images/favicon_64.png') }}">
+    <link rel="icon" type="image/png" sizes="128x128" href="{{ url_for('static', filename='images/favicon_128.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon_180.png') }}">
+    <link rel="apple-touch-icon" sizes="256x256" href="{{ url_for('static', filename='images/favicon_256.png') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='images/nav_logo.png') }}" alt="CTHI Logo" class="nav-logo">
+                    <h1>Northwestern University <br> Chinatown Health Initiative</h1>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/team" class="nav-link">Meet the Team</a></li>
+                <li class="nav-dropdown">
+                    <a href="/health-cards" class="nav-link">Health Education Cards</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/health-cards/cancer">Cancer</a></li>
+                        <li><a href="/health-cards/cardiovascular">Cardiovascular</a></li>
+                        <li><a href="/health-cards/chronic-illness">Chronic Illness</a></li>
+                        <li><a href="/health-cards/dental">Dental Health</a></li>
+                        <li><a href="/health-cards/infections">Infections & Virus</a></li>
+                        <li><a href="/health-cards/mental-health">Mental Health</a></li>
+                        <li><a href="/health-cards/preventative">Preventative Care</a></li>
+                        <li><a href="/health-cards/respiratory">Respiratory Health</a></li>
+                        <li><a href="/health-cards/sexual-health">Sexual Health</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-language-toggle">
+                <button id="langEnglish" class="nav-lang-btn active" data-lang="en">English</button>
+                <button id="langChinese" class="nav-lang-btn" data-lang="zh">中文</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Northwestern University</h3>
+                    <p>Chinatown Health Initiative</p>
+                    <p style="margin-top: 1rem;"><a href="https://www.instagram.com/nuchinatownhealth/" target="_blank" style="color: white; text-decoration: none; opacity: 0.9;">📷 @nuchinatownhealth</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/team">Meet the Team</a></li>
+                        <li><a href="/health-cards">Health Education Cards</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:chinatown@u.northwestern.edu" style="color: white; text-decoration: none; opacity: 0.9;">chinatown@u.northwestern.edu</a></p>
+                    <p style="margin-top: 1rem;">Northwestern University<br>
+                    Evanston & Chicago, IL</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Northwestern University Chinatown Health Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

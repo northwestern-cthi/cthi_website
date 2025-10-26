@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}{{ category.name }} - Health Education Cards - Northwestern University CTHI{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>{{ category.name }}</h1>
+        <p>Health education resources and information</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/health-cards">← Back to All Health Education Cards</a>
+        </div>
+        
+        <div class="resource-content">
+            <div class="resource-intro">
+                <h2>About {{ category.name }}</h2>
+                <p>This section contains educational materials and resources related to {{ category.name|lower }}. Our materials are designed to be accessible and culturally relevant for the Chinatown community.</p>
+                <p class="language-note">These resources are also available in Chinese. Use the language toggle button to switch languages.</p>
+            </div>
+            
+            <div class="resource-cards">
+                <div class="resource-item">
+                    <h3>Educational Materials</h3>
+                    <p>Downloadable information cards and brochures about {{ category.name|lower }}.</p>
+                    <p class="coming-soon">Resources coming soon - currently being compiled</p>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>Key Topics Covered</h3>
+                    <ul class="topic-list">
+                        <li>Overview and prevention</li>
+                        <li>Warning signs and symptoms</li>
+                        <li>Treatment options</li>
+                        <li>Community resources</li>
+                        <li>Frequently asked questions</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-item">
+                    <h3>Get More Information</h3>
+                    <p>Visit our health information desk at the Chinatown Public Library for printed copies of these resources, or contact us with specific questions.</p>
+                    <a href="/contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <h2>Explore Other Topics</h2>
+        <div class="related-categories">
+            <a href="/health-cards" class="btn btn-secondary">View All Categories</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
