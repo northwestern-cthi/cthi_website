@@ -91,20 +91,20 @@ const languageContent = {
             whatWeDoTitle: 'WHAT WE DO',
             resourcesTitle: 'Our Resources',
             contactTitle: 'CONTACT CHINATOWN HEALTH INITIATIVE',
-            aboutText: 'Chinatown Health Initiative is an undergraduate student organization at Northwestern University founded to connect with residents and help promote access to healthcare access in the Chicago Chinatown area.',
+            aboutText: "We're a passionate group of Northwestern students who believe that healthcare should be accessible to everyone in our community. Since 2019, we've been working directly with Chinatown residents to break down language barriers and connect families with the health resources they need most.",
             meetTeamBtn: 'Meet Our Team',
             heroMeetTeamBtn: 'Meet Our Team',
             heroOurResourcesBtn: 'Our Resources',
             volunteerTitle: 'VOLUNTEER',
-            volunteerText: 'Partnering with community organizations in Chinatown as well as medical schools in the greater Chicagoland area, we volunteer regularly at community health fairs, health screenings, health education events, providing translation and logistical assistance.',
+            volunteerText: "Every month, you'll find us at the Chinatown Community Center helping elderly residents fill out insurance forms, or at health fairs translating between doctors and patients. Last year alone, our volunteers logged over 800 hours helping bridge the gap between healthcare providers and our community.",
             infoDeskTitle: 'HEALTH INFORMATION DESK',
-            infoDeskText: 'We create and share health education resources for Chinatown residents, which has included establishing a health information desk at the Chinatown Public Library as a community platform.',
+            infoDeskText: "Stop by the Chinatown Public Library any Tuesday or Thursday afternoon, and you'll find our health information desk staffed by bilingual volunteers. We've helped over 200 families navigate everything from Medicare enrollment to finding a Mandarin-speaking dentist in the area.",
             publicEventsTitle: 'PUBLIC EVENTS',
-            publicEventsText: 'We host public events to engage with the Northwestern community and discuss issues relevant to public health.',
+            publicEventsText: 'From hosting "Health & Heritage" panels featuring local community leaders to organizing mental health awareness workshops, we create spaces where Northwestern students can learn about health disparities and cultural competency in healthcare.',
             socialsTitle: 'SOCIALS/FOOD BONDING',
-            socialsText: 'We love food! Every quarter we hold a fundraiser (buns, dumplings, tanghulu) to raise money for our initiatives and social events to foster community within our organization. We also take trips down to Chinatown to eat food and explore the community!',
+            socialsText: 'Food brings us together! Whether we\'re selling homemade baozi in the Norris Center to fund our programs, or taking our monthly "Chinatown Food Crawl" to discover the best dim sum spots, we believe that sharing meals builds the strongest communities.',
             viewResourcesBtn: 'View Health Education Cards',
-            contactText: 'Have questions or want to get involved? Reach out to us!',
+            contactText: 'Want to volunteer with us or have a question about health resources in Chinatown? We\'d love to hear from you! Whether you\'re a Northwestern student looking to get involved or a community member who needs help, don\'t hesitate to reach out.',
             followUsText: 'Follow us on Instagram',
             teamTitle: 'Meet the Team',
             teamSubtitle: 'Meet the passionate students making healthcare accessible in our community',
@@ -144,20 +144,20 @@ const languageContent = {
             whatWeDoTitle: '我們的工作',
             resourcesTitle: '我們的資源',
             contactTitle: '聯絡唐人街健康倡議',
-            aboutText: '唐人街健康倡議是西北大學的本科生學生組織，旨在與居民聯繫並幫助促進芝加哥唐人街地區的醫療保健服務。',
+            aboutText: '我們是一群充滿熱情的西北大學學生，相信醫療保健應該對我們社區中的每個人都開放。自2019年以來，我們一直與唐人街居民直接合作，打破語言障礙，將家庭與他們最需要的健康資源聯繫起來。',
             meetTeamBtn: '認識我們的團隊',
             heroMeetTeamBtn: '認識我們的團隊',
             heroOurResourcesBtn: '我們的資源',
             volunteerTitle: '志願服務',
-            volunteerText: '我們與唐人街的社區組織以及大芝加哥地區的醫學院合作，定期在社區健康博覽會、健康篩查、健康教育活動中擔任志願者，提供翻譯和後勤協助。',
+            volunteerText: '每個月，您都會在唐人街社區中心看到我們幫助老年居民填寫保險表格，或在健康博覽會上在醫生和患者之間進行翻譯。僅去年一年，我們的志願者就記錄了超過800小時的時間，幫助縮小醫療保健提供者與我們社區之間的差距。',
             infoDeskTitle: '健康資訊台',
-            infoDeskText: '我們為唐人街居民創建和分享健康教育資源，包括在唐人街公共圖書館建立健康資訊台作為社區平台。',
+            infoDeskText: '每週二或週四下午，您都可以在唐人街公共圖書館找到我們的健康資訊台，由雙語志願者提供服務。我們已經幫助了200多個家庭處理從Medicare註冊到在該地區尋找會說中文的牙醫等各種事務。',
             publicEventsTitle: '公開活動',
-            publicEventsText: '我們舉辦公開活動，與西北大學社區互動，討論與公共衛生相關的問題。',
+            publicEventsText: '從舉辦以當地社區領袖為特色的「健康與傳統」小組討論會，到組織心理健康意識研討會，我們為西北大學學生創造空間，讓他們了解健康差異和醫療保健中的文化能力。',
             socialsTitle: '社交/美食聚會',
-            socialsText: '我們熱愛美食！每個季度我們都會舉辦募款活動（包子、餃子、糖葫蘆）來為我們的倡議籌集資金，並舉辦社交活動來培養我們組織內的社區感。我們也會去唐人街吃美食和探索社區！',
+            socialsText: '美食把我們聚集在一起！無論我們是在諾里斯中心出售自製包子來為我們的項目籌集資金，還是進行每月一次的「唐人街美食之旅」來發現最好的點心店，我們都相信分享美食能建立最牢固的社區。',
             viewResourcesBtn: '查看健康教育卡片',
-            contactText: '有問題或想參與嗎？聯繫我們！',
+            contactText: '想與我們一起做志願者，或對唐人街的健康資源有疑問嗎？我們很想聽到您的消息！無論您是正在尋找參與機會的西北大學學生，還是需要幫助的社區成員，請隨時聯繫我們。',
             followUsText: '在Instagram上關注我們',
             teamTitle: '認識團隊',
             teamSubtitle: '認識讓醫療保健在我們社區中變得可及的熱情學生',
@@ -412,16 +412,51 @@ function updateContactPage(lang) {
         pageSubtitle.textContent = content.contactSubtitle;
     }
     
+    // Update contact info section title
+    const contactInfoTitle = document.querySelector('.contact-info h2');
+    if (contactInfoTitle) {
+        contactInfoTitle.textContent = content.contactTitle;
+    }
+    
     // Update contact description
     const contactDesc = document.querySelector('.contact-info p');
     if (contactDesc) {
         contactDesc.textContent = content.contactDescription;
     }
     
-    // Update form title
+    // Update contact item titles
+    const emailTitle = document.querySelector('.contact-item h4');
+    if (emailTitle && emailTitle.textContent === 'Email') {
+        emailTitle.textContent = lang === 'zh' ? '電子郵件' : 'Email';
+    }
+    
+    const whereTitle = document.querySelector('.contact-item:nth-child(2) h4');
+    if (whereTitle) {
+        whereTitle.textContent = lang === 'zh' ? '在哪裡找到我們' : 'Where to Find Us';
+    }
+    
+    const socialTitle = document.querySelector('.contact-item:last-child h4');
+    if (socialTitle) {
+        socialTitle.textContent = lang === 'zh' ? '社交媒體' : 'Social Media';
+    }
+    
+    // Update form title and labels
     const formTitle = document.querySelector('.contact-form h3');
     if (formTitle) {
         formTitle.textContent = lang === 'zh' ? '給我們留言' : 'Drop Us a Line';
+    }
+    
+    const labels = document.querySelectorAll('.contact-form label');
+    if (labels.length >= 4) {
+        labels[0].textContent = lang === 'zh' ? '姓名' : 'Name';
+        labels[1].textContent = lang === 'zh' ? '電子郵件' : 'Email';
+        labels[2].textContent = lang === 'zh' ? '主題' : 'Subject';
+        labels[3].textContent = lang === 'zh' ? '訊息' : 'Message';
+    }
+    
+    const submitBtn = document.querySelector('.contact-form .btn');
+    if (submitBtn) {
+        submitBtn.textContent = lang === 'zh' ? '發送訊息' : 'Send Message';
     }
 }
 
