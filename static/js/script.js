@@ -126,7 +126,22 @@ const languageContent = {
             heart: 'Heart Health Cards',
             preventative: 'Preventative Care Cards',
             respiratory: 'Respiratory Health Cards',
-            sexual: 'Sexual Health Cards'
+            sexual: 'Sexual Health Cards',
+            resourcesSubtitle: 'Access our comprehensive health education materials in English and Chinese',
+            teamSectionTitle: 'Our Team',
+            leadershipTeamTitle: 'Leadership Team',
+            leadershipTeamRole: 'President & Executive Board',
+            leadershipTeamDesc: 'Our leadership team meets weekly at Norris to plan events, coordinate with community partners, and dream up new ways to serve our neighbors in Chinatown.',
+            outreachTeamTitle: 'Community Outreach',
+            outreachTeamRole: 'Volunteer Coordinators',
+            outreachTeamDesc: 'These are the folks you\'ll see setting up tables at the Chinatown Community Center, organizing our monthly health screenings, and building relationships with local clinics and senior centers.',
+            educationTeamTitle: 'Health Education',
+            educationTeamRole: 'Resource Development Team',
+            educationTeamDesc: 'Our creative minds work tirelessly to translate complex medical information into simple, culturally-appropriate materials. They\'re the reason our health cards actually make sense to the families who need them most.',
+            marketingTeamTitle: 'Marketing & Events',
+            marketingTeamRole: 'Communications Team',
+            marketingTeamDesc: 'From Instagram stories to our legendary dumpling fundraisers, this team keeps our community connected and our organization funded. They\'re the reason you know when we\'re hosting events!',
+            getInvolvedBtn: 'Get Involved'
         }
     },
     zh: {
@@ -179,7 +194,22 @@ const languageContent = {
             heart: '心臟健康卡',
             preventative: '預防保健卡',
             respiratory: '呼吸系統健康卡',
-            sexual: '性健康卡'
+            sexual: '性健康卡',
+            resourcesSubtitle: '存取我們全面的中英文健康教育材料',
+            teamSectionTitle: '我們的團隊',
+            leadershipTeamTitle: '領導團隊',
+            leadershipTeamRole: '主席和執行委員會',
+            leadershipTeamDesc: '我們的領導團隊每週在諾里斯會面，策劃活動、與社區合作夥伴協調，並為為唐人街的鄰居提供服務設想新方法。',
+            outreachTeamTitle: '社區外展',
+            outreachTeamRole: '志願者協調員',
+            outreachTeamDesc: '這些人會在唐人街社區中心設置桌子、組織每月健康篩查，並與當地診所和老年人中心建立關係。',
+            educationTeamTitle: '健康教育',
+            educationTeamRole: '資源開發團隊',
+            educationTeamDesc: '我們的創意思維不知疲倦地將複雜的醫療資訊翻譯成簡單、符合文化背景的材料。他們是我們的健康卡片真正能為最需要的家庭提供幫助的原因。',
+            marketingTeamTitle: '市場營銷和活動',
+            marketingTeamRole: '傳播團隊',
+            marketingTeamDesc: '從Instagram故事到我們傳奇的餃子募款活動，這個團隊保持我們的社區聯繫並為我們的組織籌集資金。他們是您知道我們何時舉辦活動的原因！',
+            getInvolvedBtn: '參與其中'
         }
     }
 };
@@ -270,6 +300,12 @@ function updateHomePage(lang) {
         viewResourcesBtn.textContent = content.viewResourcesBtn;
     }
     
+    // Update resources subtitle
+    const resourcesSubtitle = document.querySelector('.resources-subtitle');
+    if (resourcesSubtitle) {
+        resourcesSubtitle.textContent = content.resourcesSubtitle;
+    }
+    
     // Update hero buttons
     const heroButtons = document.querySelectorAll('.hero-buttons .btn');
     if (heroButtons.length >= 2) {
@@ -342,6 +378,66 @@ function updateTeamPage(lang) {
     const joinTeamText = document.querySelector('.join-team p');
     if (joinTeamText) {
         joinTeamText.textContent = content.joinTeamText;
+    }
+    
+    // Update team section title
+    const teamSectionTitle = document.querySelector('.team-section-title');
+    if (teamSectionTitle) {
+        teamSectionTitle.textContent = content.teamSectionTitle;
+    }
+    
+    // Update team member cards
+    const teamCards = document.querySelectorAll('.team-member');
+    if (teamCards.length >= 4) {
+        // Leadership Team
+        if (teamCards[0].querySelector('h3')) {
+            teamCards[0].querySelector('h3').textContent = content.leadershipTeamTitle;
+        }
+        if (teamCards[0].querySelector('.member-role')) {
+            teamCards[0].querySelector('.member-role').textContent = content.leadershipTeamRole;
+        }
+        if (teamCards[0].querySelector('p:last-child')) {
+            teamCards[0].querySelector('p:last-child').textContent = content.leadershipTeamDesc;
+        }
+        
+        // Community Outreach
+        if (teamCards[1].querySelector('h3')) {
+            teamCards[1].querySelector('h3').textContent = content.outreachTeamTitle;
+        }
+        if (teamCards[1].querySelector('.member-role')) {
+            teamCards[1].querySelector('.member-role').textContent = content.outreachTeamRole;
+        }
+        if (teamCards[1].querySelector('p:last-child')) {
+            teamCards[1].querySelector('p:last-child').textContent = content.outreachTeamDesc;
+        }
+        
+        // Health Education
+        if (teamCards[2].querySelector('h3')) {
+            teamCards[2].querySelector('h3').textContent = content.educationTeamTitle;
+        }
+        if (teamCards[2].querySelector('.member-role')) {
+            teamCards[2].querySelector('.member-role').textContent = content.educationTeamRole;
+        }
+        if (teamCards[2].querySelector('p:last-child')) {
+            teamCards[2].querySelector('p:last-child').textContent = content.educationTeamDesc;
+        }
+        
+        // Marketing & Events
+        if (teamCards[3].querySelector('h3')) {
+            teamCards[3].querySelector('h3').textContent = content.marketingTeamTitle;
+        }
+        if (teamCards[3].querySelector('.member-role')) {
+            teamCards[3].querySelector('.member-role').textContent = content.marketingTeamRole;
+        }
+        if (teamCards[3].querySelector('p:last-child')) {
+            teamCards[3].querySelector('p:last-child').textContent = content.marketingTeamDesc;
+        }
+    }
+    
+    // Update get involved button
+    const getInvolvedBtn = document.querySelector('.join-team .btn');
+    if (getInvolvedBtn) {
+        getInvolvedBtn.textContent = content.getInvolvedBtn;
     }
 }
 
